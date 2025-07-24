@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 76, 255, 0.947);
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav .icon {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.brand p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+nav .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 1em;
+    border-left: 1px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:first-child {
+    border-left: none;
+}
+
+nav a:hover {
+    background-color: rgba(0, 76, 255, 0.947);
+    color: #000;
+}
+
+.header {
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    margin: 20px;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    margin: 20px;
+}
+
+.banner-container {
+    width: 100% - 40px;
+    overflow-x: auto;
+    padding: 20px 0;
+    margin: 20px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity; /* Efek snap saat scroll */
+}
+
+.banner {
+    display: inline-flex;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.banner img {
+    border-radius: 10px;
+    max-width: none; /* Memastikan tidak ada pembatasan width */
+    height: auto; /* Mempertahankan aspect ratio */
+    max-height: 500px; /* Batas tinggi maksimal (sesuaikan jika perlu) */
+    flex-shrink: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    scroll-snap-align: start; /* Untuk efek snap */
+}
+
+/* Menambahkan padding kanan untuk batas akhir */
+.banner::after {
+    content: '';
+    display: block;
+    min-width: 0px;
+    height: 1px;
+}
+
+/* Menghilangkan scrollbar */
+.banner-container::-webkit-scrollbar {
+    display: none;
+}
+.banner-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.profile {
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile h2 {
+    margin: 10px;
+}
+
+.article {
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.article h2 {
+    margin: 10px;
+}
+
+.article-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.article-item {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 76, 255, 0.947);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    width: calc(20% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.article-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.article-item h3 {
+    margin: 7px 0 5px 0;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.article-item p {
+    margin: 0;
+    color: #fff;
+}
+
+.article-item button {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    cursor: pointer;
+}
+
+.article-item button a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.article-item button:hover {
+    background-color: rgba(0, 179, 255, 0.968);
+    color: #000;
+}
+
+
+.youtube {
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-youtube {
+    margin: 10px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.youtube h2,
+p {
+    margin: 10px;
+}
+
+.content-youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.footer {
+    margin: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .article-item {
+        width: 100%;
+    }
+
+    .banner img {
+        height: 200px;
+    }
+
+    .nav-links {
+        flex-direction: flex-start;
+        gap: 10px;
+    }
+}
